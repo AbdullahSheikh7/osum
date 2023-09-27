@@ -1,0 +1,55 @@
+.filters-container {
+    background: white;
+    padding: 5px 150px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.filters {
+    list-style: none;
+    color: black;
+    font-size: 0.8em;
+    margin: auto;
+    display: flex;
+    max-width: 1000px;
+    justify-content: space-between;
+}
+
+@media (max-width: 650px) {
+    .filters-container {
+        padding: 5px 50px;
+    }
+}
+
+@media (max-width: 550px) {
+    .filters {
+        display: none;
+    }
+}
+
+.filters li[on] a {
+    color: var(--gold-color);
+}
+
+.filters li[on]::after {
+    height: 2px;
+    transform: scaleX(1);
+}
+
+.filters li::after {
+    content: '';
+    display: block;
+    position: relative;
+    height: 2px;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: right;
+    background: var(--gold-color);
+    transition: transform 100ms linear;
+}
+
+.filters li:hover:after {
+    transform: scaleX(1);
+    transform-origin: left;
+}

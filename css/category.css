@@ -1,0 +1,16 @@
+#categories-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1em;
+    text-align: center;
+}
+
+.category {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 100ms linear;
+}

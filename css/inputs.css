@@ -1,0 +1,67 @@
+input[type="text"] {
+    font-family: Outfit;
+    font-size: 12pt;
+    outline: none;
+    border-radius: 0;
+    border: none;
+    background: none;
+    border-bottom: 1px solid gray;
+    color: black;
+}
+
+/* My default button */
+.button {
+    font-size: 12pt;
+    height: 50px;
+    display: flex;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    transition: all 100ms linear;
+}
+
+.button span {
+    transition: all 100ms linear;
+    position: absolute;
+}
+
+.button:hover {
+    width: 0;
+}
+
+.button:hover span {
+    color: white;
+    letter-spacing: 2px;
+}
+
+.button::before {
+    content: '';
+    display: block;
+    position: relative;
+    height: 50px;
+    width: 0;
+    background-color: var(--gold-color);
+    transition: all 100ms linear;
+    left: -50%;
+}
+
+.button:hover:before {
+    width: 100%;
+    left: 0;
+}
+
+.disabled {
+    font-size: 12pt;
+    min-width: 150px;
+    height: 50px;
+    display: flex;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    background-color: white;
+    transition: all 100ms linear;
+}

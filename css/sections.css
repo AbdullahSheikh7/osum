@@ -1,0 +1,29 @@
+section {
+    margin: 100px 100px;
+}
+
+.section-heading {
+    margin: 15px;
+    text-align: center;
+}
+
+.heading-sideline {
+    width: 100px;
+    height: 2px;
+    border-radius: 1px;
+    background: var(--gold-color);
+}
+
+.our-services .services {
+    grid-gap: 2em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    justify-content: space-around;
+    text-align: center;
+}
+
+
+.our-services span {
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,40 @@
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3em;
+    padding: 50px;
+    background-color: #e8b9ab;
+}
+
+footer:first-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+footer:nth-child(2) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+@media (max-width: 680px) {
+    footer {
+        grid-template-columns: 1fr;
+    }
+}
+
+footer .navigations {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .navigations div {
+    justify-self: flex-start;
+}
+
+footer .apps {
+    margin: 0 auto;
+}
+
+footer .newsletter {
+    margin: auto;
+}

@@ -1,0 +1,40 @@
+:root {
+    --gold-color: rgb(163, 134, 63);
+    --gold-color-50: rgba(163, 134, 63, 0.5);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Outfit, sans-serif;
+    font-size: 12pt;
+}
+
+svg {
+    margin: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+hr {
+    margin: auto;
+    width: 90%;
+}
+
+h1 {
+    font-size: 40pt;
+}
+
+h2 {
+    font-size: 25pt;
+}
+
+h3 {
+    font-size: 18pt;
+}
